@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -47,7 +48,7 @@ fun Splash(alpha: Float){
         Icon(modifier = Modifier
             .size(120.dp)
             .alpha(alpha),
-            imageVector = Icons.Default.Notifications,
+            imageVector = Icons.Default.PlayArrow,
             contentDescription = "",
             tint = Color.Black
         )
