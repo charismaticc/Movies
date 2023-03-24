@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.sharipov.notificationlistenermanager'
+    namespace 'com.sharipov.movies'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.sharipov.notificationlistenermanager"
+        applicationId "com.sharipov.movies"
         minSdk 30
         targetSdk 33
         versionCode 1

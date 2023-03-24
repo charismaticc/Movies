@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">Notification Listener Manager</string>
-    <string name="service_name">NotificationListenerManager</string>
+    <string name="app_name">Movies</string>
 </resources>
