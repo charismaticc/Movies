@@ -1,10 +1,12 @@
 package com.sharipov.movies.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.fragment.app.FragmentManager.BackStackEntry
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.sharipov.movies.MainViewModel
+import com.sharipov.movies.screens.DetailsScreen
 import com.sharipov.movies.screens.MainScreen
 import com.sharipov.movies.screens.SplashScreen
 import com.sharipov.movies.utils.Constants
@@ -29,8 +31,11 @@ fun SetupNavHost(navController: NavHostController, viewModel: MainViewModel){
             MainScreen(navController = navController, viewModel = viewModel)
         }
 
-        composable(route = Screens.Details.route){
-
+        composable(route = Screens.Details.route + "/{Id}"){ backStackEntry ->
+            DetailsScreen(
+                navController = navController,
+                viewModel = viewModel,
+                itemId = backStackEntry.arguments?.getString("Id") ?: "0")
         }
     }
 }
