@@ -84,10 +84,7 @@ fun MovieItem(item: Movies, navController: NavController){
                 Text(text = item.premiered.replace('-', '.'))
             }
 
-
-
         }
     }
   }
-
 }
